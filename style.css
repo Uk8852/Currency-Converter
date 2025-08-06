@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(85, 46, 63, 0.7);
+}
+
+.converter {
+    background: rgb(2, 58, 58, 0.5);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    padding: 50px 50px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.converter h1 {
+    font-size: 30px;
+    text-decoration: underline;
+    color: rgba(196, 168, 33, 0.9);
+    margin-bottom: 40px;
+}
+
+.input {
+    border-radius: 5px;
+    border: 3px solid rgba(32, 27, 27, 0.3);
+    margin-block: 10px;
+}
+
+.input input {
+    width: 150px;
+    outline: none;
+    border: none;
+    background: rgb(2, 58, 58, 0);
+    font-size: 20px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.input select {
+    width: 150px;
+    outline: none;
+    border: none;
+    background: rgb(2, 58, 58, 0);
+    font-size: 20px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.arrow{
+    transform: rotate(180deg);
+    font-size: 40px;
+}
+
+.result{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:420px) {
+    .converter{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .converter h1{
+        font-size: 20px;
+    }
+    .input{
+        border: none;
+    }
+    .input input{
+        border: 1px solid #ccc;
+        width: 100%;
+        margin-block: 4px;
+    }
+    .input select{
+        border: 1px solid #ccc;
+        width: 100%;
+        margin-block: 4px;
+    }
+}
